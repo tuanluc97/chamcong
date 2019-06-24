@@ -6,6 +6,7 @@ import common.Constant;
 import common.Helper;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.text.ParseException;
@@ -21,7 +22,8 @@ public class CSVReader implements ReaderFile {
         String line = Constant.BLANK_CHARACTER;
         boolean firstTime = true;
         try {
-            br = new BufferedReader(new FileReader(file));
+            File directory = new File("./");
+            br = new BufferedReader(new FileReader(directory.getAbsolutePath() + file));
             while ((line = br.readLine()) != null) {
                 String[] country = line.split(Constant.SEPARATOR);
                 if (firstTime) {

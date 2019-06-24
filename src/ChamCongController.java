@@ -31,8 +31,8 @@ public class ChamCongController {
         }
     }
 
-    public void readFile(ReaderFile readerFile) {
-        readerFile.parse(Constant.DIR_CSV, listEmployee, listDateOfMonth);
+    public void readFile(String file, ReaderFile readerFile) {
+        readerFile.parse(file, listEmployee, listDateOfMonth);
     }
 
     private int getDateIndex(Date date) {

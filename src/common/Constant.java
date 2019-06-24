@@ -1,7 +1,7 @@
 package common;
 
 public class Constant {
-    public final static String DIR_CSV = "D:\\WorkSpace\\ChamCong\\resource\\ChamCongEwaythang6.csv";
+    public final static String DIR_CSV = "/resource/ChamCongEwaythang6.csv";
     public final static String SEPARATOR = ",";
     public final static String BLANK_CHARACTER = "";
     public final static String MESSAGE_INPUT = "Nhap vao ngay thang (dd/MM)";
